@@ -1379,9 +1379,10 @@ class ZLExternalAlbumListNavView: UIView {
         self.addSubview(self.albumTitleLabel)
         
         self.cancelBtn = UIButton(type: .custom)
-        self.cancelBtn.titleLabel?.font = ZLLayout.navTitleFont
-        self.cancelBtn.setTitle(localLanguageTextValue(.cancel), for: .normal)
-        self.cancelBtn.setTitleColor(.navTitleColor, for: .normal)
+        //self.cancelBtn.titleLabel?.font = ZLLayout.navTitleFont
+        //self.cancelBtn.setTitle(localLanguageTextValue(.cancel), for: .normal)
+        //self.cancelBtn.setTitleColor(.navTitleColor, for: .normal)
+        self.cancelBtn.setImage(getImage("zl_btnClose"), for: .normal)
         self.cancelBtn.addTarget(self, action: #selector(cancelBtnClick), for: .touchUpInside)
         self.addSubview(self.cancelBtn)
     }
