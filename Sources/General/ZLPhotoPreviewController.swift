@@ -93,7 +93,7 @@ public class ZLPhotoPreviewController: UIViewController {
         zl_debugPrint("ZLPhotoPreviewController deinit")
     }
     
-    init(photos: [ZLPhotoModel], index: Int, showBottomViewAndSelectBtn: Bool = true) {
+    public init(photos: [ZLPhotoModel], index: Int, showBottomViewAndSelectBtn: Bool = true) {
         self.arrDataSources = photos
         self.showBottomViewAndSelectBtn = showBottomViewAndSelectBtn
         self.currentIndex = index
