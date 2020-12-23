@@ -108,7 +108,7 @@ class PhotoConfigureCNViewController: UIViewController {
     
     func setupUI() {
         self.view.backgroundColor = .white
-        
+                        
         self.scrollView = UIScrollView()
         self.scrollView.alwaysBounceVertical = true
         self.scrollView.keyboardDismissMode = .onDrag

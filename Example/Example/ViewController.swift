@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         self.title = "Main"
         self.view.backgroundColor = .white
         
+        ZLPhotoConfiguration.default().themeColorDeploy.navBarColor = UIColor.red
+        
         func createBtn(_ title: String, _ action: Selector) -> UIButton {
             let btn = UIButton(type: .custom)
             btn.setTitle(title, for: .normal)
@@ -166,6 +168,7 @@ class ViewController: UIViewController {
         } else {
             ac.showPhotoLibrary(sender: self)
         }
+                
     }
     
     @objc func previewLocalAndNetImage() {
